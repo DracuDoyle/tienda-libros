@@ -1,7 +1,6 @@
 ---
 ---
 
-<!-- Hola crayola  -->
 <html lang="en">
 
 	<head>
@@ -15,7 +14,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 		<title>Tienda de Libros</title>
-		<!-- Que buena serie es The Boys -->
 
 	</head>
 
@@ -23,27 +21,140 @@
 		
 		<div id="encabezado">
 
-			<div class="container-fluid col-md-2">
+			<div class="container-fluid col-sm-2">
 				<img src="../../public/logo.jpeg" class="img-fluid logo" alt="Logo Tienda"/>
 			</div>
 
-			<div class="container-fluid col-md-6">
+			<div class="container-fluid col-sm-6">
 				<form class="d-flex">
             		<input class="form-control mr-2" type="search" placeholder="Buscar"/>
             		<button class="btn btn-outline-light" type="submit">
-                		<i class="fas fa-search"></i> <!-- Ícono de lupa -->
+                		<i class="fas fa-search"></i>
 					</button>
         		</form>
 			</div>
 
-			<div class="container-fluid col-md-4">
-				<h3>Cuenta y Carrito</h3>
+			<div class="container-fluid col-sm-4 d-flex justify-content-end align-items-center">
+				<button class="btn btn-outline-light me-2 btn-custom-size" type="button">
+					<i class="fas fa-user"></i>
+				</button>
+				<button class="btn btn-outline-light btn-custom-size" type="button">
+					<i class="fas fa-shopping-cart"></i>
+				</button>
 			</div>
 
 		</div>
 
-		<div id="categorias"></div>
-		<div id="editoriales"></div>
+		<div id="editoriales">
+			
+			<div class="container-fluid col-sm-12" style="padding: 20px;">
+				<h2 class="text-center">Editoriales</h2>
+			</div>
+
+			<div id="editoriales-carousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					
+					<!-- Primera Slide -->
+					<div class="carousel-item active">
+						<div class="d-flex justify-content-center align-items-center">
+							<div class="container-fluid col-sm-2"></div>
+							<div class="container-fluid col-sm-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-1.jpg" class="img-fluid editorial-img" alt="editorial-1">
+								</button>
+							</div>
+							<div class="container-fluid col-sm-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-2.png" class="img-fluid editorial-img" alt="editorial-2">
+								</button>
+							</div>
+							<div class="container-fluid col-sm-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-3.png" class="img-fluid editorial-img" alt="editorial-3">
+								</button>
+							</div>
+							<div class="container-fluid col-sm-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-4.webp" class="img-fluid editorial-img" alt="editorial-4">
+								</button>
+							</div>
+							<div class="container-fluid col-sm-2"></div>
+						</div>
+					</div>
+			
+					<!-- Segunda Slide -->
+					<div class="carousel-item">
+						<div class="d-flex justify-content-center align-items-center">
+							<div class="container-fluid col-sm-2"></div>
+							<div class="container-fluid col-sm-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-5.png" class="img-fluid editorial-img" alt="editorial-5">
+								</button>
+							</div>
+							<div class="container-fluid col-md-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-6.png" class="img-fluid editorial-img" alt="editorial-6">
+								</button>
+							</div>
+							<div class="container-fluid col-sm-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-7.jpg" class="img-fluid editorial-img" alt="editorial-7">
+								</button>
+							</div>
+							<div class="container-fluid col-sm-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-8.png" class="img-fluid editorial-img" alt="editorial-8">
+								</button>
+							</div>
+							<div class="container-fluid col-sm-2"></div>
+						</div>
+					</div>
+
+					<!-- Tercera Slide -->
+					<div class="carousel-item">
+						<div class="d-flex justify-content-center align-items-center">
+							<div class="container-fluid col-sm-2"></div>
+							<div class="container-fluid col-sm-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-9.png" class="img-fluid editorial-img" alt="editorial-9">
+								</button>
+							</div>
+							<div class="container-fluid col-sm-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-10.jpg" class="img-fluid editorial-img" alt="editorial-10">
+								</button>
+							</div>
+							<div class="container-fluid col-sm-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-11.png" class="img-fluid editorial-img" alt="editorial-11">
+								</button>
+							</div>
+							<div class="container-fluid col-sm-2">
+								<button class="btn p-0">
+									<img src="../../public/editorial-12.png" class="img-fluid editorial-img" alt="editorial-12">
+								</button>
+							</div>
+							<div class="container-fluid col-sm-2"></div>
+						</div>
+					</div>
+
+				</div>
+			
+				<!-- Controles del Carrusel -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#editoriales-carousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#editoriales-carousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+
+			</div>
+			
+
+		</div>
+
 		<div id="mas-vendidos"></div>
 		<div id="seccion-libros"></div>
 		
@@ -58,6 +169,7 @@
 
 		#encabezado {
 			display: flex;
+			flex-wrap: wrap; /* Permite que los elementos se ajusten */
 			justify-content: space-between; /* Espacio entre los elementos */
     		align-items: center; /* Centra los elementos verticalmente */
 			background-color: rgba(7, 20, 32, 1);
@@ -71,6 +183,46 @@
 			min-width: 50px;
 			border-radius: 20px;
 		}
+
+		.btn-custom-size {
+        	font-size: 1.5rem; /* Aumenta el tamaño del texto y los iconos */
+        	padding: 10px 20px; /* Ajusta el relleno interno (padding) del botón */
+    	}
+
+		#editoriales {
+			justify-content: space-between; /* Espacio entre los elementos */
+    		align-items: center; /* Centra los elementos verticalmente */
+			background-color: rgba(11, 30, 48, 1);
+            color: rgba(255, 199, 0, 1); /* Color de texto */
+			padding: 20px;
+		}
+
+		#editoriales-carousel {
+			display: flex;
+			background-color: white;
+			color: black;
+			align-items: center;
+			padding: 10px;
+		}
+
+		.editorial-img {
+			max-width: 100%;
+			max-height: auto;
+		}
+
+		.carousel-control-prev-icon,
+    	.carousel-control-next-icon {
+        	background-color: rgba(7, 20, 32, 1); /* Color blanco con transparencia */
+        	border-radius: 50%; /* Hace los iconos redondos */
+        	width: 50px; /* Ajusta el tamaño del icono */
+        	height: 50px;
+    	}
+
+		.carousel-control-prev,
+		.carousel-control-next {
+    		bottom: 10px; /* Coloca los botones un poco más arriba */
+		}
+
 
 	</style>
 
